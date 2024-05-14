@@ -5,7 +5,13 @@ using UnityEngine;
 
 public class DEATH : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other){
+    public GameObject particle;
+    void OnTriggerEnter(Collider other)
+    {
+        GameObject clone;
+        clone = Instantiate(particle, other.gameObject.transform.position, other.gameObject.transform.rotation);
         Destroy(other.gameObject);
+        Destroy(clone, 3f);
+
     }
 }

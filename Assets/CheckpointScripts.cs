@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CheckpointScripts : MonoBehaviour
 {
-    public Transform[] checkpoint;
+    public vectorthreescriptableobject location;
 
     // Start is called before the first frame update
     void Start()
@@ -16,5 +16,9 @@ public class CheckpointScripts : MonoBehaviour
     void Update()
     {
         
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        location.checkpoint(this.gameObject.transform.position);
     }
 }

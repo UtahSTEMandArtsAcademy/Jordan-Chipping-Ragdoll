@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e80fa2f1ac158414a8bb46701103a03b, type: 3}
   m_Name: checkpoint locasun
   m_EditorClassIdentifier: 
-  location: {x: 0, y: 0, z: 0}
+  location: {x: 14.59, y: 8.42, z: -11.69}
